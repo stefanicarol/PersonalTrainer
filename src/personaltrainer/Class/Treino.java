@@ -51,10 +51,10 @@ public abstract class Treino{
         this.valorFixo = valorFixo;
     }
 
-     public abstract double ValorSemanal(String categoria); 
-    
+    public abstract double ValorSemanal(String categoria); 
+    public void addClientes(Cliente cliente) {} 
     @Override
     public String toString() {
         return "Treino{" + "numero=" + numero + ", categoria=" + categoria + ", horario=" + horario + ", valorFixo=" + valorFixo + '}';
-    } 
+    }  
 }

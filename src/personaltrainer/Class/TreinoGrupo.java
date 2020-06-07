@@ -19,9 +19,7 @@ public class TreinoGrupo extends Treino{
     public TreinoGrupo(int numero, String categoria, String horario, double valorFixo, ArrayList<Cliente> clientes) {
         super(numero, categoria, horario, valorFixo);
         this.clientes = clientes;
-    }
-
-    
+    } 
     
     public ArrayList<Cliente> getClientes() {
         return clientes;
@@ -34,9 +32,7 @@ public class TreinoGrupo extends Treino{
     public void addClientes(Cliente cliente) {
         this.clientes.add(cliente);
     }  
-    
      
-    
     @Override
     public double ValorSemanal(String categoria) {
         if(super.getCategoria().equalsIgnoreCase("A")){ 
